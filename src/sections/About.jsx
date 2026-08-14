@@ -49,10 +49,7 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate CSE undergraduate. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm a passionate CSE undergraduate.I enjoy building practical, efficient software solutions and am always looking to grow my skills further.
               </p>
               <p>
                 

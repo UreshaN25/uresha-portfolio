@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/Button";
 import {Menu, X} from "lucide-react";
 const navLinks = [
-  { href: "#About", label: "About" },
-  { href: "#Projects", label: "Projects" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
@@ -27,13 +28,6 @@ export const Navbar = () => {
       }  z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a
-          href="#"
-          className="text-xl font-bold tracking-tight hover:text-primary"
-        >
-          PM<span className="text-primary">.</span>
-        </a>
-
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
@@ -51,7 +45,9 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact">
+            <Button size="sm">Contact Me</Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -78,9 +74,11 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
-              Contact Me
-            </Button>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button className="w-full">
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       )}

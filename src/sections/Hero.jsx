@@ -1,27 +1,24 @@
 import { Button } from "@/components/Button";
 import {
   ArrowRight,
-  ChevronDown,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
+  "Python",
+  "C",
+  "C++",
+  "Java",
+  "JavaScript",
   "React",
   "Next.js",
   "TypeScript",
   "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
+  "MySQL",
   "Docker",
-  "AWS",
   "Vercel",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
   "Figma",
   "Git",
   "GitHub Actions",
@@ -82,16 +79,18 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Uresha Magallagodage — a computer science undergraduate of University of Moratuwa, Sri Lanka.
-                I am still learning and I struggle a lot while I am at it but I love to struggle.
+                I'm Uresha Magallagodage, a 2nd year Computer Science & Engineering undergraduate at the University of Moratuwa, Sri Lanka, with hands-on experience in web development. I enjoy building practical, efficient software solutions and am always looking to grow my skills further.
+                
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
@@ -126,9 +125,9 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
-            <div className="relative max-w-md mx-auto">
+            <div className="relative max-w-xs mx-auto">
               <div
                 className="absolute inset-0 
               rounded-3xl bg-gradient-to-br 
@@ -181,19 +180,6 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"
-      >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
-        >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown wn className="w-6 h-6 animate-bounce" />
-        </a>
       </div>
     </section>
   );
