@@ -13,13 +13,11 @@ const skills = [
   "JavaScript",
   "React",
   "Next.js",
-  "TypeScript",
   "Node.js",
   "MySQL",
   "Docker",
   "Vercel",
   "Tailwind CSS",
-  "Figma",
   "Git",
   "GitHub Actions",
 ];
